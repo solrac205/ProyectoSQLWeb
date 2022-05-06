@@ -1,0 +1,11 @@
+C:\Desarrollo\C#\WebSiteApp2\AppPersonalWebSite\CRAneoSUSecurity\bin\Debug\CRAneoSUSecurity.dll
+C:\Desarrollo\C#\WebSiteApp2\AppPersonalWebSite\CRAneoSUSecurity\bin\Debug\CRAneoSUSecurity.pdb
+C:\Desarrollo\C#\WebSiteApp2\AppPersonalWebSite\CRAneoSUSecurity\obj\Debug\CRAneoSUSecurity.dll
+C:\Desarrollo\C#\WebSiteApp2\AppPersonalWebSite\CRAneoSUSecurity\obj\Debug\CRAneoSUSecurity.pdb
+C:\Desarrollo\C#\WebSiteApp2\AppPersonalWebSite\CRAneoSUSecurity\obj\Debug\CRAneoSUSecurity.csproj.CoreCompileInputs.cache
+C:\Desarrollo\C#\WebSiteApp2\AppPersonalWebSite\CRAneoSUSecurity\obj\Debug\CRAneoSUSecurity.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\AppPersonalWebSite\CRAneoSUSecurity\bin\Debug\CRAneoSUSecurity.dll
+C:\Users\Administrator\Desktop\AppPersonalWebSite\CRAneoSUSecurity\bin\Debug\CRAneoSUSecurity.pdb
+C:\Users\Administrator\Desktop\AppPersonalWebSite\CRAneoSUSecurity\obj\Debug\CRAneoSUSecurity.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AppPersonalWebSite\CRAneoSUSecurity\obj\Debug\CRAneoSUSecurity.dll
+C:\Users\Administrator\Desktop\AppPersonalWebSite\CRAneoSUSecurity\obj\Debug\CRAneoSUSecurity.pdb
