@@ -289,8 +289,10 @@ namespace SQLDataProcessAndObjects
 
             try
             {
+                Conexion.Close();
                 Conexion.ConnectionString = ConnectionStrTest;
                 Conexion.Open();
+                
             }
             catch (Exception Err)
             {
@@ -314,6 +316,44 @@ namespace SQLDataProcessAndObjects
                 return string.Empty;
             }
 
+        }
+
+        public MySqlDataReader GetData(string SQLScript)
+        {
+            if ((ConnectionStrTest == "") ||
+               (ConnectionStrTest == string.Empty))
+            {
+                ErrorDesc = "Cadena de conexión incorrecta, no puede ser vacia.";
+                return null;
+            }
+
+            try
+            {
+                Conexion.Close();
+                Conexion.ConnectionString = ConnectionStrTest;
+                Conexion.Open();
+            }
+            catch (Exception Err)
+            {
+                ErrorDesc = Err.Message;
+                return null;
+            }
+
+            if (Conexion.State == System.Data.ConnectionState.Open)
+            {
+                ErrorDesc = "";
+                MySqlCommand mySqlCommand = new MySqlCommand();
+                mySqlCommand.Connection = Conexion;
+                mySqlCommand.CommandType = System.Data.CommandType.Text;
+                mySqlCommand.CommandText = SQLScript;
+                return mySqlCommand.ExecuteReader();
+
+            }
+            else
+            {
+                ErrorDesc = $"No se pudo establecer conexión a Servidor de Datos: {Conexion.State}";
+                return null;
+            }
         }
     }
 }

@@ -26,17 +26,28 @@
                    <asp:TableCell HorizontalAlign="Center">
                        <asp:Button ID="SQLButton" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="white" OnClick="SQLButton_Click" Text="<%$ Resources:Resource, SQLButton.Text%>" BackColor="#006666" />
                    </asp:TableCell>
-               </asp:TableRow>
-               <asp:TableRow>
+             </asp:TableRow>
+              <asp:TableRow>
+                 <asp:TableCell HorizontalAlign="Center">
+                    &nbsp
+                 </asp:TableCell>
+             </asp:TableRow> 
+             <asp:TableRow>
                    <asp:TableCell>
                        <asp:Label ID="lblResult" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="#2F4F4F" Font-Italic="True"></asp:Label>
                    </asp:TableCell>
-               </asp:TableRow>
-               <asp:TableRow>
+             </asp:TableRow>
+             <asp:TableRow>
+                 <asp:TableCell HorizontalAlign="Center">
+                    <asp:GridView ID="grdResult" runat="server"></asp:GridView>
+                 </asp:TableCell>
+             </asp:TableRow>   
+             <asp:TableRow>
                    <asp:TableCell>&nbsp</asp:TableCell>
-               </asp:TableRow>
+             </asp:TableRow>
          </asp:Table>
      </div>
+    
 
 </asp:Content>
 
