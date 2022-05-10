@@ -41,6 +41,9 @@
                  <asp:TableCell HorizontalAlign="Center">
                     <asp:GridView ID="grdResult" runat="server"></asp:GridView>
                  </asp:TableCell>
+                  <asp:TableCell HorizontalAlign="Center">
+                    <asp:GridView ID="grdResult2" runat="server"></asp:GridView>
+                 </asp:TableCell>
              </asp:TableRow>   
              <asp:TableRow>
                    <asp:TableCell>&nbsp</asp:TableCell>

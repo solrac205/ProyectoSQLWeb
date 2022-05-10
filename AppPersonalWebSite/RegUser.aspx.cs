@@ -23,11 +23,16 @@ public partial class RegUser : System.Web.UI.Page
         lblResult.Text = "SQL result: " + mySQLFunction.GetSQLValue("SELECT CURRENT_TIMESTAMP() AS FECHA;");
 
         myGridSQL.StrConnectionToTest = Global_Def.AppStrConnection;
-        var result = mySQLFunction.GetData("SELECT * FROM topic;");
+        var result = mySQLFunction.GetData("SELECT * FROM topic; " + "SELECT * FROM role; ");
         
 
         grdResult.DataSource = result;
         grdResult.DataBind();
+
+        result.NextResult();
+
+        grdResult2.DataSource = result;
+        grdResult2.DataBind();
 
         return;
     }
