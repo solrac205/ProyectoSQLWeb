@@ -1,0 +1,135 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Site, App_Web_nwremnhv" %>
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta name="author" content="Carlos F. Ramírez Abdalla"/>
+<meta name="generator" content="Visual Estudio Community 2019"/>
+<meta name="description" content="Web Site Multinegocios Sueño Propio"/>
+
+    <title><%: Page.Title %></title>
+
+    <asp:ContentPlaceHolder id="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <script src="./Scripts/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="./Scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="./Scripts/jquery-3.3.1.min.map" type="text/javascript"></script>
+
+    <script src="./Scripts/jquery-3.3.1.slim.js" type="text/javascript"></script>
+    <script src="./Scripts/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+    <script src="./Scripts/jquery-3.3.1.slim.min.map" type="text/javascript"></script>
+
+    <script src="./Scripts/jquery-3.3.1.intellisense.js" type="text/javascript"></script>
+    <script src="./Scripts/bootstrap.js" type="text/javascript"></script>
+    <script src="./Scripts/modernizr-2.8.3.js" type="text/javascript"></script>
+    <script src="./Scripts/bootstrap.min.js" type="text/javascript"></script>
+    
+    <script src="./Scripts/WebForms/DetailsView.js" type="text/javascript"></script>
+    <script src="./Scripts/WebForms/Focus.js" type="text/javascript"></script>
+    <script src="./Scripts/WebForms/GridView.js" type="text/javascript"></script>
+    <script src="./Scripts/WebForms/Menu.js" type="text/javascript"></script>
+    <script src="./Scripts/WebForms/MenuStandards.js" type="text/javascript"></script>
+    <script src="./Scripts/WebForms/SmartNav.js" type="text/javascript"></script>
+    <script src="./Scripts/WebForms/TreeView.js" type="text/javascript"></script>
+    <script src="./Scripts/WebForms/WebForms.js" type="text/javascript"></script>
+    <script src="./Scripts/WebForms/WebParts.js" type="text/javascript"></script>
+    <script src="./Scripts/WebForms/WebUIValidation.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="~/Content/CRAneoStylesWeb.css" media="all" />
+    <link rel="stylesheet" href="~/Content/Site.css" media="all" />
+    <link rel="stylesheet" href="~/Content/bootstrap.css" media="all" />
+    <link rel="stylesheet" href="~/Content/bootstrap.css.map" media="all" />
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css.map" media="all" />
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.css" media="all" />
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.css.map" media="all" />
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.min.css" media="all" />
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.min.css.map" media="all" />
+    <link href="~/img/Emerald.ico" rel="shortcut icon" type="image/x-icon" />
+   
+ 
+
+</head>
+
+<body>
+    <form id="frmMasterSite" runat="server">
+    <div>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/" style="font-size:28px; color: white">
+                        <asp:Literal ID="Op1" runat="server" text="<%$ Resources:Resource, Menu.Inicio%>" /></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/"><asp:Literal ID="Op2" runat="server" text="<%$ Resources:Resource, Menu.Hoteles%>" /></a></li>
+                        <li><a runat="server" href="~/"><asp:Literal ID="Op3" runat="server" text="<%$ Resources:Resource, Menu.Chalets%>" /></a></li>
+                        <li><a runat="server" href="~/"><asp:Literal ID="Op4" runat="server" text="<%$ Resources:Resource, Menu.BazaresEventos%>" /></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="~/About.aspx"><asp:Literal ID="Op5" runat="server" text="<%$ Resources:Resource, Menu.Abaut%>" /></a></li>
+                        <li><a runat="server" href="~/Contact.aspx"><asp:Literal ID="Op6" runat="server" text="<%$ Resources:Resource, Menu.Contacto%>" /></a></li>
+
+                        <asp:LoginView runat="server" ViewStateMode="Disabled">
+                            <AnonymousTemplate>
+                               
+                                    <li><a runat="server" href="~/RegUser.aspx"><asp:Literal ID="Op7" runat="server" text="<%$ Resources:Resource, Menu.Registro%>" /></a></li>
+                                    <li><a runat="server" href="~/"><asp:Literal ID="Op8" runat="server" text="<%$ Resources:Resource, Menu.LogIn%>" /></a></li>
+                               
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                               
+                                    <li><a runat="server" href="~/" title="Manage your account">Hello, !</a></li>
+                                    <li>
+                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/"  />
+                                    </li>
+                               
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+
+
+                            <li class="nav-item dropdown-toggle" style="border-color:transparent;background-color:transparent;top:10px;">
+                                <asp:DropDownList ID="DropDownList_Language" runat="server" Height="20px" Width="70px" 
+                                     OnSelectedIndexChanged="DropDownList_Language_SelectedIndexChanged" AutoPostBack="true" CssClass="dropdown">
+                                    <asp:ListItem Value="es-GT">Español</asp:ListItem>
+                                    <asp:ListItem Value="en-US">English</asp:ListItem>
+                                </asp:DropDownList>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+            
+            <hr />
+            
+            <footer>
+                <p>Copyright &copy; <%: DateTime.Now.Year %> Multinegocios Sueño Propio  - C.R.A.</p>
+
+                
+                <h6 style="text-align:center "><friendlyUrls:ViewSwitcher id="ViewSwitcher1" Visible="false" runat="server" /></h6>
+
+            </footer>
+        </div>
+      </div>
+    </form>
+</body>
+</html>

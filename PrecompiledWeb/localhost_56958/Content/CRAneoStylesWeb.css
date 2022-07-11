@@ -1,0 +1,69 @@
+﻿#frmConfigDataServer {
+    height: 337px;
+}
+
+.dropdown {
+    height: 35px;
+    background-color: darkslategrey;
+    font-size: 12px;
+    color: white;
+    vertical-align: central;
+    align-content: center;
+}
+
+.dropdownConf {
+    height: 25px;
+    width: auto;
+    background-color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #2F4F4F;
+    vertical-align: central;
+    align-content: center;
+}
+
+.InputText {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ImgMessageIcon{
+    width:18px;
+    height:18px;
+    background-color:transparent;
+}
+
+#ImgNoAccess {
+    width: 128px;
+    height: 128px;
+    background-color: transparent;
+}
+
+.MessageLabel {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16px;
+    font-weight: 700;
+    background-color: transparent;
+    color: #2F4F4F;
+}
+
+#InputSupportUser {
+    border: 2px solid darkgray;
+    background-color: transparent;
+}
+
+.ButtonEnable {
+    background-color: #2F4F4F;
+    color: white;
+    font-weight: 700;
+    height: 40px;
+}
+
+.ButtonDisable {
+    background-color: #407171;
+    color: white;
+    font-weight: 700;
+    height: 40px;
+}
+
+

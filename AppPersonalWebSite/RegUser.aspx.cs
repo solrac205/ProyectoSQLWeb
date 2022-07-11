@@ -28,6 +28,12 @@ public partial class RegUser : System.Web.UI.Page
 
         grdResult.DataSource = result;
         grdResult.DataBind();
+        grdResult.BackColor = System.Drawing.Color.Gray;
+        grdResult.BorderColor = System.Drawing.Color.Black;
+
+        grdResult.AllowCustomPaging = true;
+
+        //https://www.mejorcodigo.com/p/1590.html
 
         result.NextResult();
 
